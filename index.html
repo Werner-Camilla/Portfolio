@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+      name="description"
+      content="Multimediedesigner med en baggrund som fysioterapeut - portfolio med fokus på UX & UI design."
+       />
+    <meta
+      name="keywords"
+      content="multimediedesigner Aalborg, multimediedesigner nordjylland, multimediedesign, UX design, UI design, multimediedesigner og fysioterapeut, brugerundersøgelser"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/media-queries.css">
+  <script src="https://kit.fontawesome.com/9d12c4f8b7.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/figurer/favicon.svg" />
+<title>Camilla Werners Portfolio</title>
+  <script src="https://kit.fontawesome.com/9d12c4f8b7.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</head>
+<body> 
+  <header class="header">
+    <a href="index.html">
+      <img class="logo" alt="Logo med teksten: Camilla Werner - Multimediedesigner" src="assets/images/figurer/eget-logo.svg" />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="cases.html">CASES</a></li>
+        <li><a class="e-mail button" href="mailto:camillawerner1@gmail.com">Kontakt mig</a> </li>        
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box animate-from-top">
+          <h1><span class="bold">UX & UI</span> designer med <span class="bold">sundhedsfaglig</span> baggrund</h1>
+          <h4 class="hero-introduction animate-from-top">
+            Jeg har en forkærlighed for design af brugergrænseflader til sundhedsfaglige og idrætsrelaterede virksomheder, da jeg har en baggrund som fysioterapeut. 
+          </h4>
+          <a href="cases.html" class="button">Mine Cases</a>        
+        </div>
+        <div class="hero-img-box">
+          <img src="assets/images/hero-2.webp" class="hero-img animate-from-top" alt="Portræt af Camilla Werner" />
+        </div>
+      </div>
+      <div class="chevron-icon-container">
+        <i class="fa-solid fa-chevron-down chevron-icon"></i>
+      </div>
+    </section>
+    <section class="container grid section-skills">
+        <h2>Mine kompetencer</h2>
+        <div class="container grid grid-3-columns margin-bottom">
+          <!-- Skill Card 1 -->
+          <article class="skill-card" id="card1" onclick="toggleList('card1')">
+            <div class="skill-icon">
+              <img src="assets/images/figurer/90-cirkel.webp" alt="cirkel udfyldt med guld 90%">
+              <h4>95%</h4>
+            </div>
+            <!--Jeg ved godt at der skulle være brugt modals her i de tre cards, men jeg nåede ikke at få det til at virke-->
+           <p class="skill-title">UX DESIGN</p><p class="UX-desciption">Jeg er stærk i at sætte mig ind i brugernes behov ved hjælp af diverse user experience undersøgelser og metoder.</p>
+            <ul class="list list-hidden">
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Objektorienteret UX (OOUX)</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Card Sorting</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Tree Testing</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Think Aloud Test</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Design Survey</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Five Second Test</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Interviews</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Personas</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>User Flows & User Journeys</li>
+            </ul>
+            <div class="expand-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </article>
+          <article class="skill-card" id="card2" onclick="toggleList('card2')">
+           <div class="skill-icon"><img src="assets/images/figurer/80-cirkel.webp" alt="cirkel udfyldt med sølv 80%"><h4>90%</h4></div>
+            <p class="skill-title">UI DESIGN</p><p class="UI-desciption">Jeg finder det spændende at lave mockups og prototyper med brug af diverse metoder og teorier.</p>
+            <ul class="list list-hidden">
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Atomic design</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Design Thinking</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Prototyping</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>UI patterns</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Designsystem</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Browns principper om informations-arkitektur</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Informationsdesign (tekstforfatning)</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Figma, Adobe XD og illustrator</li>
+            </ul>
+            <div class="expand-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </article>
+          <article class="skill-card" id="card3" onclick="toggleList('card3')">
+            <div class="skill-icon"> <img src="assets/images/figurer/65-cirkel.webp" alt="cirkel udfyldt med bronze 65%"><h4>75%</h4></div>
+            <p class="skill-title">Frontend & teknik</p> <p class="Frontend-desciption">Jeg er motiveret for at bedre mit faglige niveau, og øver mig på daglig basis. Jeg har basic kompetencer indenfor kode og teknik.</p> 
+            <ul class="list list-hidden">
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Html</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>CSS</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Simple JavaScript funktioner</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Teknisk SEO</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Data analyseværktøjer</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Benchmarking & konkurrentanalyse</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Optimering for synshæmmede</li>
+              <li class="list-item"><i class="fa-solid fa-check list-icon"></i>Wordpress CMS</li>
+            </ul>
+            <div class="expand-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </article>
+        </section>
+        <section class="section-about-cases">
+          <h2>Mine cases</h2>
+  
+          <div class="container grid grid-3-columns">
+            <a href="fys-case.html" class="case-card">
+            <figure class="case-item">
+            <img  
+            src="assets/images/fys-case/fys-forside.webp"
+            class="case-img"
+            alt="Computer med skærmbillede af forsiden til Aalborg Smerte- og sportsklinik"/>
+            <figcaption class="short-case-text">
+              <h4>Aalborg Smerte- og Sportsklinik</h4>
+              <p>Redesign af en hjemmeside til en fysioterapeut, som er lavet i i forbindelse med 2. semesters eksamensprojekt.</p>
+            </figcaption>
+          </figure> 
+        </a>
+        <a href="dyre-case.html" class="case-card">
+          <figure class="case-item"> 
+           <img
+          src="assets/images/dyre-case/dyre-forside2.webp"
+          class="case-img"
+          alt="Computerskærm der viser forsiden til hjemmesiden for en fiktiv virksomhed, som er dyrepension og internat"
+        />
+        <figcaption class="short-case-text">
+          <h4>Sejr  Davidsens Dyrepension- og Internat</h4>
+          <p>Design til en hjemmeside for en dyrepension kombineret med et internat, som er lavet på UX/UI valgfaget.</p>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="food-case.html" class="case-card">
+        <figure class="case-item">
+        <img
+              src="assets/images/food-case/food-forside.webp"
+              class="case-img"
+              alt="Forside for et fiktivt mad-firma kaldet Omnifood"
+            />
+            <figcaption class="short-case-text">
+              <h4>The Omnifood project</h4>
+              <p>Et projekt jeg selv har lavet i forbindelse med et online kusus for at forbedre mine evner indenfor html og css.</p>
+            </figcaption>
+          </figure>
+        </a>
+        </section>
+        <section class="section-about-me">
+          <h2>Om mig</h2>
+          <div class="container grid grid-2-columns">
+            <article class="about-quotes">
+              <ul class="list"><h3>
+                Sådan beskriver de mig:</h3>
+                <li> <h5><i class="fa-solid fa-quote-left"></i>Camilla er tillidsfuld og føler med andre".</h5><p> -Grace, veninde</p></li>
+                <li><h5>"Camilla er enormt bevidst om sine styrker og svagheder."</h5><p> -Natasja, medstuderende</p></li>
+                <li><h5>Camilla er god til at se på den lyse side af livet."</h5>
+                  <p>- Mathias, ven.</li>
+                <li><h5>"Camilla er viljestærk, ambitiøs og vil altid gøre arbejdet lidt bedre.<i class="fa-solid fa-quote-right"></i></h5>        
+                  <p>- Martin, bror. </p></li> 
+               </ul>              
+              </article>
+              <article class="about-box">
+            <ul class="list">
+              <li> <h4>Kreativ & Nysgerrig </h4></li>
+              <li> <h4>Nærværende & Omsorgsfuld </h4></li>
+              <li> <h4>Selvbevidst & Ydmyg</h4> </li>
+              <li><h4>Optimistisk & Modig</h4></li>
+              <li><h4>Engageret og Målrettet</h4></li>
+              <li><p>- Søskende og medstuderende</p></li>   
+              </ul>
+            </article>
+          </div>
+        </div>  
+          </section>
+      </body>
+      </main>
+      <section class="section-quote">
+        <div class="grid grid-3-columns">
+          <div class="logo-column">
+            <a class="logo-footer" href="index.html">
+              <img class="logo" alt="Logo med teksten: Camilla Werner - Multimediedesigner" src="assets/images/figurer/eget-logo-lys.svg" />
+            </a>
+          </div>
+          <div class="quote-column">
+            <div class="quote">
+              "Jeg er den motiverende i en gruppe, da god stemning og arbejdsmoral fører til bedst mulige resultater!"
+            </div>
+          </div>
+          <!--Jeg er nødt til at bruge svg versionen af mit portræt, da alt andet blev grynet-->
+          <div class="image-column">
+            <img class="me-img" src="assets/images/Mig.svg" alt="portræt af mig, Camilla Werner"> 
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-nav">
+            <ul class="footer-list">
+             
+              <li class="footer-item"><a class="footer-link" href="https://www.linkedin.com/in/camilla-werner-813626173/details/experience/"target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+              <li class="footer-item"><i class="fa-solid fa-envelope"></i>camillawerner1@gmail.com</li>
+            </ul>
+          </div>
+          <div class="footer-button-container">
+           <a class="e-mail button" href="mailto:camillawerner1@gmail.com"><i class="fa-solid fa-envelope"></i>Kontakt mig</a>
+           <div class="footer-copyright">
+              &copy; Copyright by Camilla Werner <br> Multimediedesigner med sundhedsfaglig baggrund</div></div>
+            <ul class="footer-contact"><li class="footer-item"><i class="fas fa-thumbtack"></i>9200 Aalborg SV. </li><li class="footer-item"><i class="fas fa-phone"></i> 30 27 37 20 </li></ul>
+      </footer>
+      </html>
+    
+    
+
