@@ -1,0 +1,972 @@
+/*import af fonte:*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Mukta+Malar&family=Outfit:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Mukta+Malar&family=Outfit:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Mukta+Malar:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&family=Rubik:wght@400;500;600;700&display=swap");
+
+/***********************************************/
+/*GENEREL STYLING*/
+/***********************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", "Mukta Malar";
+  line-height: 1;
+  font-weight: 400;
+  color: #141f23;
+  overflow-x: hidden;
+  background-color: #e7e9ea;
+}
+
+.container {
+  /*1140px*/
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.4rem;
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+  color: #11232a;
+  font-family: "Montserrat";
+}
+h1 {
+  font-size: 4.8rem;
+  line-height: 1.05;
+  margin-bottom: 4.2rem;
+}
+h2 {
+  font-size: 4rem;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  margin-top: 6.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 2.6rem;
+}
+h4 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+h5 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 400;
+}
+
+p {
+  color: #11232a;
+  font-size: 1.6rem;
+  font-family: "Mukta Malar";
+  line-height: 1.6;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.05;
+  margin-bottom: 4.2rem;
+}
+.semi-bold {
+  font-weight: 600;
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.4rem 2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: "montserrat";
+  transition: all 0.6s;
+}
+
+.button:link,
+.button:visited {
+  background-color: #01401c;
+  /* for at tilføje en border indvendigt */
+  box-shadow: inset #01512b 0 0 0 2px;
+
+  color: #fff;
+}
+.button:hover,
+.button:active {
+  background-color: #02733e;
+  box-shadow: inset #e7e9ea 0 0 3px;
+  color: #e7e9ea;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  text-align: left;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #11232a;
+  padding-top: 0.6rem;
+}
+
+/*hjælper CLASSES*/
+/* .margin-right {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+} */
+
+.chevron-icon-container {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+/* Animation for pil ned der blinker*/
+.chevron-icon {
+  font-size: 3rem;
+  color: #11232a;
+  animation: blinkChevron 4s linear infinite;
+  position: relative;
+  top: 1rem;
+}
+/* Fra synlig til ikke synlig ved hjælp af opacity*/
+@keyframes blinkChevron {
+  100%,
+  100% {
+    opacity: 0;
+  }
+  0%,
+  0% {
+    opacity: 1;
+  }
+}
+
+/***********************************************/
+/*HEADER*/
+/***********************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cfd3d4;
+  height: 8rem;
+  padding: 0rem 2.4rem;
+  position: relative;
+  color: #fff;
+}
+.cases-html .header {
+  background-color: #e7e9ea;
+}
+.fys-case-html .header {
+  background-color: #e7e9ea;
+}
+.dyre-case-html header {
+  background-color: #e7e9ea;
+}
+.food-case-html header {
+  background-color: #e7e9ea;
+}
+
+/*Dette herunder er for at det er tydeligt hvor man er, så er det kun den specifikke side, hvor der er underline og lysere grøn på.*/
+.cases-html .nav-link:link,
+.cases-html .nav-link:visited {
+  text-decoration: underline;
+  color: #02733e;
+}
+
+.fys-case-html .fys-link:link,
+.fys-case-html .fys-link:visited {
+  text-decoration: underline;
+  color: #02733e;
+}
+.dyre-case-html .dyre-link:link,
+.dyre-case-html .dyre-link:visited {
+  text-decoration: underline;
+  color: #02733e;
+}
+.food-case-html .food-link:link,
+.food-case-html .food-link:visited {
+  text-decoration: underline;
+  color: #02733e;
+}
+
+.food-case-html .section-about-cases {
+  margin-top: 10rem;
+}
+.logo {
+  height: 4rem;
+  transition: all 0.6s;
+}
+.logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/***********************************************/
+/*NAVIGATION*/
+/***********************************************/
+.nav {
+  height: 3.2rem;
+  z-index: 2;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  padding-top: 2px;
+  margin-right: 12rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #01401c;
+  font-weight: 800;
+  font-size: 1.8rem;
+  transition: color 0.3s, text-decoration 0.6s ease;
+}
+.nav-link:hover,
+.nav-link:active {
+  text-decoration: underline;
+  color: #02733e;
+  font-weight: 900;
+}
+
+/***********************************************/
+/*MOBILE*/
+/***********************************************/
+.button-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 3.2rem;
+  color: #333;
+}
+/* .fa-xmark {
+  display: none;
+} */
+
+/***********************************************/
+/*HERO SECTION*/
+/***********************************************/
+
+.hero-img {
+  width: 100%;
+}
+.section-hero {
+  background-color: #cfd3d4;
+  padding: 6.8rem 0 5.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero h1 {
+  color: #11232a;
+  font-size: 4.8rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.hero-introduction {
+  color: #11232a;
+  font-family: "mukta malar";
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+/***********************************************/
+/*SEKTION OM KOMPETENCER*/
+/***********************************************/
+.section-skills {
+  padding: 2.8rem 0 3.2rem 0;
+  color: #11232a;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-skills h2 {
+  margin-bottom: 1.2rem !important;
+}
+
+.section-skills .container.grid.grid-3-columns {
+  margin-top: 0 !important;
+}
+
+.section-skills .heading-secondary {
+  margin-bottom: 4rem;
+}
+
+.container.grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 2.6rem;
+  overflow: hidden;
+  transition: height 0.4s;
+  z-index: 2;
+  cursor: pointer;
+}
+.skill-card li {
+  font-size: 1.8rem;
+}
+.skill-card h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #11232a;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.skill-card .skill-title {
+  color: #11232a;
+}
+
+.list-hidden {
+  display: none !important;
+}
+
+.expand-icon {
+  cursor: pointer;
+  color: #11232a;
+  margin-top: 8px;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon i {
+  font-size: 1.8rem;
+}
+.skill-card:hover .expand-icon {
+  transform: scale(1.2);
+}
+
+.list-hidden .expand-icon i.rotate {
+  transform: rotate(360deg);
+}
+
+.list-item {
+  text-align: left;
+  font-size: 1.6rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: "mukta malar";
+}
+.skill-title {
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  color: #fff;
+}
+
+.skill-icon {
+  text-align: center;
+  width: 35%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  /* margin-left: 11rem; */
+}
+.skill-icon img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: rotate 3s infinite;
+}
+.skill-icon:hover img {
+  transform: rotate(360deg);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-card1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-card2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-card3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skill-card#card1 .skill-icon img {
+  animation: rotate-card1 6s infinite;
+}
+
+.skill-card#card2 .skill-icon img {
+  animation: rotate-card2 8s infinite;
+}
+
+.skill-card#card3 .skill-icon img {
+  animation: rotate-card3 10s infinite;
+}
+
+/***********************************************/
+/*Focused cases på forside*/
+/***********************************************/
+.section-about-cases {
+  margin: 5rem 0 5rem 0;
+  padding: 2.8rem 0 6.2rem 0;
+  background-color: #cfd3d4;
+}
+.container.grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.case-card {
+  position: relative;
+  background-color: #e7e9ea;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2.4rem 3.8rem rgb(72, 72, 72);
+  overflow: hidden;
+  transition: all 0.4s;
+  margin-bottom: 5rem;
+  text-decoration: none;
+}
+/*ekstra layer foran .case-card-elementet.*/
+.case-card::before {
+  /*Tomt indhold "", men det er nødvendigt for pseudo-elementet*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 115, 62, 0);
+  /* Starter med 100% opacity på den grønne farve */
+  transition: background-color 0.4s ease;
+}
+
+.case-card:hover::before {
+  background-color: rgba(
+    108,
+    108,
+    108,
+    0.5
+  ); /* 0.5 Giver 50% opacity kun på den mørke farve ved hover */
+}
+.case-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  background-color: #e7e9ea;
+}
+.section-about-cases p {
+  color: #11232a;
+}
+
+.section-about-cases h4 {
+  color: #11232a;
+  margin-top: 5rem;
+  text-decoration: none;
+}
+.section-about-cases,
+h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.cases-presentation {
+  text-align: left;
+  margin: 2rem;
+}
+.case-img {
+  width: 45%;
+}
+
+.case-item p {
+  margin-top: 1rem;
+}
+.short-case-text {
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+/***********************************************/
+/*SE OGSÅ CASES*/
+/***********************************************/
+.about-other-cases {
+  margin-bottom: 0;
+  margin-top: -10rem;
+  padding-bottom: 12rem;
+}
+.fys-case-html .section-quote {
+  margin-top: -10rem;
+}
+
+/***********************************************/
+/*OM MIG SEKTIONEN*/
+/***********************************************/
+.section-about-me {
+  padding: 2rem 3rem;
+  margin-bottom: 10rem;
+  z-index: -1;
+  position: relative;
+  /* padding: 4.8rem 0 5.6rem 0; */
+}
+
+.about-box {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.about-box h5,
+p {
+  line-height: 1.6;
+}
+.about-box::before,
+.about-box::after {
+  /*Der skal ikke være indhold i boksen*/
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  /*Placering i midten af den anden box*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-box::before {
+  width: 85%;
+  padding-bottom: 85%;
+  background-color: #29393f;
+  z-index: 1;
+  opacity: 10%;
+}
+.about-box::after {
+  width: 70%;
+  padding-bottom: 70%;
+  background-color: #11232a;
+  z-index: 2;
+  opacity: 10%;
+}
+
+.about-quotes {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-style: italic;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+.about-quotes h3 {
+  font-style: normal;
+}
+
+.fa-quote-right {
+  font-size: 3rem;
+  margin-left: 0.5rem;
+}
+.fa-quote-left {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+/***********************************************
+Animationer 
+***********************************************/
+
+/*KILDE: disse keyframes er lavet med inspiration fra 2. semester projektet "Aalborg Smerte- og sportsklinik, (styles.css, linje 1885-1918 */
+.animate-from-top {
+  /* Udløser en fade-in-animation, der varer 1 sekund. */
+  animation: fadeIn 1s;
+}
+/* Starter med opacity 0, bevæger sig op med 20% af sin højde og Slutter synligt med opacity 100 på den endelige position. */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-animation {
+  /* transition tager 0,5 sekunder. */
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in-animation.active {
+  /*bliver synligt og vender tilbage til sin normale position*/
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.8s, opacity 0.8s;
+}
+/*ændring, så det ikke transformerer på mindre skærm*/
+@media (max-width: 500px) {
+  .fade-in-animation {
+    opacity: 1;
+    transform: none;
+  }
+  .fade-in-animation.active {
+    transform: none;
+  }
+}
+
+/***********************************************/
+/*CASES SIDEN*/
+/***********************************************/
+.section-cases {
+  padding: 3.2rem 0 3.2rem 0;
+  color: #11232a;
+}
+
+.button-container {
+  display: block;
+  margin-bottom: 10rem;
+  text-align: center;
+  /*For det ser ikke ud som centreret*/
+  margin-right: 2rem;
+}
+
+.section-cases h3 {
+  margin-left: 2rem;
+}
+.section-cases .text-left {
+  text-align: left;
+  padding: 2rem;
+  margin-bottom: -1rem;
+}
+.section-cases h1 {
+  padding: 5.6rem 0 3.2rem 0;
+  color: #11232a;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-cases .section-skills .chevron-icon-container {
+  text-align: center;
+  position: relative;
+  margin-top: 10rem;
+  grid-column: span 2;
+}
+
+.section-cases .chevron-icon {
+  position: absolute;
+  left: 105%;
+  transform: translateX(-50%);
+  margin-bottom: 5rem;
+}
+
+.case-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin: 2rem;
+}
+.case-img-box {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.case-img-box::before,
+.case-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.case-img-box::before {
+  width: 105%;
+  padding-bottom: 105%;
+  background-color: #29393f;
+  z-index: -2;
+  opacity: 10%;
+}
+.case-img-box::after {
+  width: 85%;
+  padding-bottom: 85%;
+  background-color: #414f55;
+  z-index: -1;
+  opacity: 10%;
+}
+.case-img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.case-img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.case-img-box.clicked img {
+  transform: scale(2);
+  /* Glidende tranformation */
+  transition: transform 0.5s ease;
+}
+
+/***********************************************
+FØR FOOTER SECTION
+***********************************************/
+.logo-column {
+  text-align: left;
+}
+.quote-column {
+  text-align: center;
+}
+.image-column {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.section-quote {
+  position: relative;
+  background-color: #29393f;
+  color: #e7e9ea;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  font-style: italic;
+  padding: 1rem 3rem;
+  margin: 0;
+  margin-top: 0rem;
+  font-size: 3rem;
+}
+
+.section-quote .logo {
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+.quote {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-top: 5rem;
+  color: #e7e9ea;
+}
+.me-img {
+  width: 25%;
+  bottom: 0;
+  margin-bottom: -1rem;
+  margin-right: 5rem;
+}
+
+/***********************************************
+FOOTER 
+***********************************************/
+.footer {
+  padding: 10rem 3rem;
+  background-color: #29393f;
+  margin: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  grid-column: 1 / 2;
+  justify-self: start;
+  font-size: 1.4rem;
+  color: #e7e9ea;
+}
+
+.footer-button-container {
+  grid-column: 2 / 3;
+  color: #e7e9ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .button {
+  background-color: #e7e9ea;
+  color: #01401c;
+  box-shadow: inset #e7e9ea 0 0 3px;
+}
+.footer .button:hover {
+  background-color: #02733e;
+  color: #01401c;
+  box-shadow: inset #068449 0 0 3px;
+}
+
+.footer-contact {
+  grid-column: 3 / 4;
+  justify-self: end;
+  color: #e7e9ea;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.footer-list {
+  padding: 0;
+  margin-left: 4rem;
+  list-style: none;
+  font-size: 1.2rem;
+  color: #e7e9ea;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.footer-item {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: #e7e9ea;
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #e7e9ea;
+  text-align: left;
+  margin-top: 1.6rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s ease;
+}
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: none;
+  color: #02733e;
+}
+.fa-envelope,
+.fa-phone,
+.fa-thumbtack,
+.fa-linkedin {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.e-mail {
+  font-size: 2rem;
+  color: #11232a;
+  text-decoration: none;
+}
+.footer-copyright {
+  font-size: 1.4rem;
+  color: #e7e9ea;
+  text-align: center;
+  margin-top: 4rem;
+  line-height: 2;
+}
