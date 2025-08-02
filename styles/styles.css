@@ -19,8 +19,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #141f23;
-  overflow-x: hidden;
-  background-color: #e7e9ea;
+  overflow-x: hidden !important;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 
 .container {
@@ -117,23 +117,24 @@ p {
   border-radius: 9px;
   border: none;
   cursor: pointer;
-  font-family: "montserrat";
+  font-family: "Montserrat";
   transition: all 0.6s;
 }
 
 .button:link,
 .button:visited {
-  background-color: #01401c;
+  background: linear-gradient(To right, #e0218a, #ed5c9b);
   /* for at tilføje en border indvendigt */
-  box-shadow: inset #01512b 0 0 0 2px;
-
-  color: #fff;
+  box-shadow: inset #e0218a 0 0 0 2px;
+  color: #ffffff;
+  font-family: "Montserrat", "Mukta Malar", sans-serif;
 }
 .button:hover,
 .button:active {
-  background-color: #02733e;
-  box-shadow: inset #e7e9ea 0 0 3px;
-  color: #e7e9ea;
+  background-color: #eeee;
+  box-shadow: inset #11232a 0 0 4px;
+  color: #11232a;
+  font-family: "Montserrat", "Mukta Malar", sans-serif;
 }
 
 .list {
@@ -178,7 +179,7 @@ strong {
 /* Animation for pil ned der blinker*/
 .chevron-icon {
   font-size: 3rem;
-  color: #11232a;
+  color: #e0218a;
   animation: blinkChevron 4s linear infinite;
   position: relative;
   top: 1rem;
@@ -202,46 +203,46 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cfd3d4;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
   height: 8rem;
   padding: 0rem 2.4rem;
   position: relative;
   color: #fff;
 }
 .cases-html .header {
-  background-color: #e7e9ea;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 .fys-case-html .header {
-  background-color: #e7e9ea;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 .dyre-case-html header {
-  background-color: #e7e9ea;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 .food-case-html header {
-  background-color: #e7e9ea;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 
 /*Dette herunder er for at det er tydeligt hvor man er, så er det kun den specifikke side, hvor der er underline og lysere grøn på.*/
 .cases-html .nav-link:link,
 .cases-html .nav-link:visited {
   text-decoration: underline;
-  color: #02733e;
+  color: #e0218a;
 }
 
 .fys-case-html .fys-link:link,
 .fys-case-html .fys-link:visited {
   text-decoration: underline;
-  color: #02733e;
+  color: #e0218a;
 }
 .dyre-case-html .dyre-link:link,
 .dyre-case-html .dyre-link:visited {
   text-decoration: underline;
-  color: #02733e;
+  color: #e0218a;
 }
 .food-case-html .food-link:link,
 .food-case-html .food-link:visited {
   text-decoration: underline;
-  color: #02733e;
+  color: #e0218a;
 }
 
 .food-case-html .section-about-cases {
@@ -274,7 +275,7 @@ strong {
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #01401c;
+  color: #e0218a;
   font-weight: 800;
   font-size: 1.8rem;
   transition: color 0.3s, text-decoration 0.6s ease;
@@ -282,7 +283,7 @@ strong {
 .nav-link:hover,
 .nav-link:active {
   text-decoration: underline;
-  color: #02733e;
+  color: #ed5c9b;
   font-weight: 900;
 }
 
@@ -312,7 +313,7 @@ strong {
   width: 100%;
 }
 .section-hero {
-  background-color: #cfd3d4;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
   padding: 6.8rem 0 5.6rem 0;
 }
 
@@ -349,13 +350,19 @@ strong {
 /***********************************************/
 .section-skills {
   padding: 2.8rem 0 3.2rem 0;
-  color: #11232a;
+  color: #ebf7f5;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  background: #011f26;
 }
 
+.section-skills p {
+  color: #ebf7f5;
+  text-align: center;
+}
 .section-skills h2 {
   margin-bottom: 1.2rem !important;
+  color: #ebf7f5;
 }
 
 .section-skills .container.grid.grid-3-columns {
@@ -364,6 +371,7 @@ strong {
 
 .section-skills .heading-secondary {
   margin-bottom: 4rem;
+  color: #ebf7f5;
 }
 
 .container.grid-3-columns {
@@ -388,7 +396,7 @@ strong {
   cursor: pointer;
 }
 .skill-card li {
-  font-size: 1.8rem;
+  color: #ebf7f5;
 }
 .skill-card h4 {
   position: absolute;
@@ -396,31 +404,35 @@ strong {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: #11232a;
+  color: #ebf7f5;
   font-size: 2rem;
   z-index: 1;
 }
-
-.skill-card .skill-title {
-  color: #11232a;
+.skill-card .skill-card .skill-title {
+  color: #ebf7f5;
+}
+.list-icon {
+  color: #ebf7f5;
+  font-size: 1.4rem;
 }
 
 .list-hidden {
   display: none !important;
 }
 
-.expand-icon {
+.skill-card .expand-icon {
   cursor: pointer;
-  color: #11232a;
+  color: #ebf7f5;
   margin-top: 8px;
   transition: transform 0.3s ease;
 }
 
 .expand-icon i {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .skill-card:hover .expand-icon {
   transform: scale(1.2);
+  color: #e0218a;
 }
 
 .list-hidden .expand-icon i.rotate {
@@ -431,17 +443,18 @@ strong {
   text-align: left;
   font-size: 1.6rem;
   display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: 0.1rem;
+  margin-top: 1rem;
   font-family: "mukta malar";
 }
+
 .skill-title {
   margin-bottom: 1.8rem;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
-  color: #fff;
+  color: #ebf7f5;
 }
 
 .skill-icon {
@@ -515,7 +528,7 @@ strong {
 .section-about-cases {
   margin: 5rem 0 5rem 0;
   padding: 2.8rem 0 6.2rem 0;
-  background-color: #cfd3d4;
+  background: linear-gradient(to right, #3ab19b, #4cbf91);
 }
 .container.grid-3-columns {
   display: grid;
@@ -549,10 +562,10 @@ strong {
 
 .case-card:hover::before {
   background-color: rgba(
-    108,
-    108,
-    108,
-    0.5
+    255,
+    0,
+    170,
+    0.3
   ); /* 0.5 Giver 50% opacity kun på den mørke farve ved hover */
 }
 .case-card:hover {
@@ -608,10 +621,26 @@ h2 {
 /***********************************************/
 .section-about-me {
   padding: 2rem 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
   z-index: -1;
   position: relative;
-  /* padding: 4.8rem 0 5.6rem 0; */
+  background: linear-gradient(to right, #025e73, #024b5c);
+  padding: 4.8rem 0 10.6rem 0;
+}
+
+.section-about-me p,
+.section-about-me h1,
+.section-about-me h2,
+.section-about-me h3,
+.section-about-me h4,
+.section-about-me h5,
+.section-about-me i {
+  color: #ebf7f5;
+}
+
+.section-about-me h3 {
+  text-align: center;
 }
 
 .about-box {
@@ -621,10 +650,12 @@ h2 {
   align-items: center;
   text-align: center;
   justify-content: center;
+  color: #ebf7f5;
 }
 .about-box h5,
-p {
+.about-box p {
   line-height: 1.6;
+  color: #ebf7f5;
 }
 .about-box::before,
 .about-box::after {
@@ -641,16 +672,16 @@ p {
 .about-box::before {
   width: 85%;
   padding-bottom: 85%;
-  background-color: #29393f;
+  background-color: #4cbf91;
   z-index: 1;
-  opacity: 10%;
+  opacity: 30%;
 }
 .about-box::after {
   width: 70%;
   padding-bottom: 70%;
-  background-color: #11232a;
+  background-color: #3ab19b;
   z-index: 2;
-  opacity: 10%;
+  opacity: 30%;
 }
 
 .about-quotes {
@@ -660,18 +691,22 @@ p {
   text-align: left;
   font-weight: 400;
   margin-left: 2rem;
+  color: #ebf7f5;
 }
 .about-quotes h3 {
   font-style: normal;
+  color: #ebf7f5;
 }
 
 .fa-quote-right {
   font-size: 3rem;
   margin-left: 0.5rem;
+  color: #ebf7f5;
 }
 .fa-quote-left {
   font-size: 3rem;
   margin-right: 1rem;
+  color: #ebf7f5;
 }
 
 /***********************************************
@@ -723,14 +758,16 @@ Animationer
 .section-cases {
   padding: 3.2rem 0 3.2rem 0;
   color: #11232a;
-}
-
-.button-container {
-  display: block;
+  max-width: 120rem;
+  padding: 0;
+  margin: 0 auto;
   margin-bottom: 10rem;
   text-align: center;
-  /*For det ser ikke ud som centreret*/
-  margin-right: 2rem;
+  /* margin-right fjernet for korrekt centrering */
+}
+.section-cases .container {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .section-cases h3 {
@@ -766,6 +803,11 @@ Animationer
   font-size: 1.8rem;
   line-height: 1.8;
   margin: 2rem;
+}
+.case-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .case-img-box {
   cursor: pointer;
@@ -829,11 +871,14 @@ FØR FOOTER SECTION
   justify-content: flex-end;
   align-items: flex-end;
 }
+.section-quote p {
+  color: #ebf7f5;
+}
 
 .section-quote {
   position: relative;
-  background-color: #29393f;
-  color: #e7e9ea;
+  background: linear-gradient(to right, #025e73, #024b5c);
+  color: #ebf7f5;
   border-bottom: 1px solid #444;
   text-align: center;
   font-style: italic;
@@ -865,8 +910,9 @@ FOOTER
 ***********************************************/
 .footer {
   padding: 10rem 3rem;
-  background-color: #29393f;
+  background: linear-gradient(to right, #025e73, #024b5c);
   margin: 0;
+  color: #ebf7f5;
 }
 
 .footer-grid {
@@ -880,32 +926,22 @@ FOOTER
   grid-column: 1 / 2;
   justify-self: start;
   font-size: 1.4rem;
-  color: #e7e9ea;
+  color: #ebf7f5;
 }
 
 .footer-button-container {
   grid-column: 2 / 3;
-  color: #e7e9ea;
+  color: #ebf7f5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.footer .button {
-  background-color: #e7e9ea;
-  color: #01401c;
-  box-shadow: inset #e7e9ea 0 0 3px;
-}
-.footer .button:hover {
-  background-color: #02733e;
-  color: #01401c;
-  box-shadow: inset #068449 0 0 3px;
-}
 
 .footer-contact {
   grid-column: 3 / 4;
   justify-self: end;
-  color: #e7e9ea;
+  color: #ebf7f5;
   font-size: 1.4rem;
   line-height: 1.5;
   text-align: left;
@@ -918,7 +954,7 @@ FOOTER
   margin-left: 4rem;
   list-style: none;
   font-size: 1.2rem;
-  color: #e7e9ea;
+  color: #ebf7f5;
   text-align: left;
   margin-top: 4rem;
 }
@@ -926,7 +962,7 @@ FOOTER
 .footer-item {
   margin-bottom: 2rem;
   font-size: 1.6rem;
-  color: #e7e9ea;
+  color: #ebf7f5;
   list-style: none;
 }
 
@@ -934,7 +970,7 @@ FOOTER
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;
-  color: #e7e9ea;
+  color: #ebf7f5;
   text-align: left;
   margin-top: 1.6rem;
 }
@@ -948,7 +984,7 @@ FOOTER
 .footer-link:hover,
 .footer-link:active {
   text-decoration: none;
-  color: #02733e;
+  color: #e0218a;
 }
 .fa-envelope,
 .fa-phone,
@@ -965,7 +1001,7 @@ FOOTER
 }
 .footer-copyright {
   font-size: 1.4rem;
-  color: #e7e9ea;
+  color: #ebf7f5;
   text-align: center;
   margin-top: 4rem;
   line-height: 2;
