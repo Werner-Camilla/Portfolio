@@ -353,7 +353,10 @@ strong {
   color: #ebf7f5;
   text-align: center;
   margin-bottom: 0;
-  background: #011f26;
+  background: linear-gradient(to right, #012f3a, #011c22);
+  /* background: linear-gradient(to right, #0c231f, #0f261d); */
+  /* background: linear-gradient(to right, #025e73, #024b5c); */
+  /*background: #011f26;*/
 }
 
 .section-skills p {
@@ -761,7 +764,7 @@ Animationer
   max-width: 120rem;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 14rem;
   text-align: center;
   /* margin-right fjernet for korrekt centrering */
 }
@@ -772,17 +775,27 @@ Animationer
 
 .section-cases h3 {
   margin-left: 2rem;
+  text-align: left;
 }
+
+.section-cases h2 {
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+.section-cases p {
+  text-align: left;
+}
+
 .section-cases .text-left {
   text-align: left;
   padding: 2rem;
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
 }
 .section-cases h1 {
   padding: 5.6rem 0 3.2rem 0;
   color: #11232a;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .section-cases .section-skills .chevron-icon-container {
@@ -810,7 +823,7 @@ Animationer
   object-fit: contain;
 }
 .case-img-box {
-  cursor: pointer;
+  cursor: zoom-in;
   position: relative;
   display: flex;
   align-items: center;
@@ -847,13 +860,14 @@ Animationer
   transition: transform 0.5s ease;
 }
 .case-img:hover {
-  cursor: pointer;
+  cursor: zoom-in;
   transform: scale(1.03);
 }
 .case-img-box.clicked img {
   transform: scale(2);
   /* Glidende tranformation */
   transition: transform 0.5s ease;
+  cursor: zoom-out;
 }
 
 /***********************************************
@@ -877,7 +891,7 @@ FØR FOOTER SECTION
 
 .section-quote {
   position: relative;
-  background: linear-gradient(to right, #025e73, #024b5c);
+  background: linear-gradient(to right, #012f3a, #011c22);
   color: #ebf7f5;
   border-bottom: 1px solid #444;
   text-align: center;
@@ -910,7 +924,8 @@ FOOTER
 ***********************************************/
 .footer {
   padding: 10rem 3rem;
-  background: linear-gradient(to right, #025e73, #024b5c);
+  background: linear-gradient(to right, #012f3a, #011c22);
+  /* background: linear-gradient(to right, #025e73, #024b5c); */
   margin: 0;
   color: #ebf7f5;
 }
