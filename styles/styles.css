@@ -13,6 +13,11 @@
   box-sizing: border-box;
   font-size: 62.5%;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Montserrat", "Mukta Malar";
@@ -98,10 +103,10 @@ p {
 
 .bold {
   font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 1.05;
-  margin-bottom: 4.2rem;
+  font-size: inherit;
+  line-height: inherit;
 }
+
 .semi-bold {
   font-weight: 600;
 }
@@ -330,7 +335,7 @@ strong {
   color: #11232a;
   font-size: 4.8rem;
   line-height: 1.05;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.2rem;
   font-weight: 500;
   font-family: "Montserrat";
 }
@@ -340,8 +345,7 @@ strong {
   font-family: "mukta malar";
   font-weight: 300;
   font-size: 2rem;
-  line-height: 1.2;
-  margin-top: 1rem;
+  line-height: 1.4;
   margin-bottom: 3.2rem;
 }
 
@@ -764,9 +768,8 @@ Animationer
   max-width: 120rem;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 14rem;
+  margin-bottom: 12rem;
   text-align: center;
-  /* margin-right fjernet for korrekt centrering */
 }
 .section-cases .container {
   padding-left: 0;
@@ -828,7 +831,7 @@ Animationer
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 .case-img-box::before,

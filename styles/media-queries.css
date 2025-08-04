@@ -8,19 +8,42 @@
   .grid-4-columns {
     grid-template-columns: 1fr !important;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    margin-right: 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
   .section-hero {
-    padding: 2.4rem 0 6.4rem 0;
+    padding: 2.4rem 0 3.4rem 0;
   }
-
-  .hero {
-    padding: 0 3.2rem;
-  }
-
-  .hero-introduction {
+  h2 {
     font-size: 2.6rem;
+  }
+  .hero-introduction {
+    font-size: 2rem;
     line-height: 1.4;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .button,
@@ -30,16 +53,23 @@
     width: 80%;
     text-align: center;
     margin: 0 auto;
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 1.8rem;
+    padding: 1.6rem;
   }
 
-  .heading-primary {
-    font-size: 4rem;
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    text-align: center;
   }
 
   .hero-img {
     width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-text-box {
+    text-align: center;
   }
 
   .header {
@@ -51,19 +81,21 @@
   }
 
   .header .logo {
-    height: 5.2rem;
-    max-width: 75%;
+    height: 4.4rem;
+    width: auto;
+    padding-top: 1rem;
   }
 
   .header .button {
     font-size: 1.8rem;
     padding: 1.2rem 1.8rem;
-    margin-right: -10rem;
+    margin-right: 0;
     width: auto;
     white-space: nowrap;
   }
 
-  .section-quote {
+  .section-quote,
+  .section-about-cases {
     padding: 0;
     margin: 0;
     display: flex;
@@ -90,6 +122,61 @@
     width: 40%;
     max-width: 100%;
     height: auto;
+  }
+
+  /* cases siden */
+
+  .section-cases {
+    padding: 0 1.2rem;
+    margin: 0 auto;
+    margin-left: 1rem;
+  }
+  .section-cases h1 {
+    font-size: 3.2rem;
+    margin: 2rem 0 1rem 0;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .grid-2-columns {
+    grid-template-columns: 1fr !important;
+    row-gap: 4rem;
+  }
+
+  .case-text-box,
+  .case-img-box {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .case-text-box h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .case-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .case-img-box:first-of-type {
+    margin-top: 2.4rem;
+  }
+  .case-description {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+  }
+  .button-container {
+    margin-top: 1.2rem;
+    margin-bottom: 8rem; /* her skaber du god afstand */
+  }
+
+  .button {
+    font-size: 1.8rem;
+    width: auto;
+    padding: 1.2rem 2rem;
   }
 
   .footer-grid {
