@@ -406,14 +406,14 @@ strong {
 .skill-card li {
   color: #ebf7f5;
 }
-.skill-card h4 {
+.skill-icon i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 3rem; /* sætter ikon-størrelse */
   color: #ebf7f5;
-  z-index: 1;
+  z-index: 2; /* ligger over billedet */
 }
 .skill-card .fa-users,
 .fa-paintbrush,
@@ -470,8 +470,8 @@ strong {
 }
 
 .skill-icon {
-  text-align: center;
   width: 35%;
+  text-align: center;
   position: relative;
   overflow: hidden;
   margin-top: 2.2rem;
@@ -484,6 +484,8 @@ strong {
   cursor: pointer;
   transition: transform 0.3s ease;
   animation: rotate 3s infinite;
+  position: relative;
+  z-index: 1;
 }
 .skill-icon:hover img {
   transform: rotate(360deg);
